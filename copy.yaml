@@ -10,5 +10,3 @@ run:
     - scripts\
     - /s
     - /e
-  outputs:
-    - name: scripts
