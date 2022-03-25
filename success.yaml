@@ -1,0 +1,13 @@
+platform: windows
+
+inputs: 
+  - name: repo
+
+run:
+  path: pwsh.exe
+  args:
+    - repo/success.ps1
+    - private_key
+    - ((private-repo-key))
+
+

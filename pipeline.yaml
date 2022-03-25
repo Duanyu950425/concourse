@@ -16,3 +16,8 @@ jobs:
           depth: 1
       - task: copy_source
         file: repo/copy.yaml
+    on_success:
+      task: success
+      file: repo/success.yaml
+      vars:
+        private_key: ((private-repo-key))
