@@ -5,7 +5,7 @@ resources:
       uri: https://github.com/Duanyu950425/concourse.git
       version_depth: 50
       branch: main
-      private_key: ((private-repo-key))
+      private_key: ((private_key))
 
 jobs:
   - name: build
@@ -20,4 +20,4 @@ jobs:
       task: success
       file: repo/success.yaml
       vars:
-        private_key: ((private-repo-key))
+        private_key: ((private_key))

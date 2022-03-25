@@ -8,6 +8,6 @@ run:
   args:
     - repo/success.ps1
     - -private_key
-    - ((private-repo-key))
+    - ((private_key))
 
 
