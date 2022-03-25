@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param(
-    [string]$private-repo-key
+    [string] $private-repo-key
 )
 
 $CommandName = $PSCmdlet.MyInvocation.InvocationName;
