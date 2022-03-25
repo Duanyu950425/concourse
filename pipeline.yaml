@@ -1,0 +1,18 @@
+resources:
+  - name: repo
+    type: git
+    source:
+      uri: https://github.com/Duanyu950425/Cpp-recitation-notes.git
+      version_depth: 50
+      branch: master
+      private_key: ((private-repo-key))
+
+jobs:
+  - name: build
+    public: true
+    plan:
+      - get: repo
+        params:
+          depth: 1
+      - task: copy_source
+        file: copy.yaml
