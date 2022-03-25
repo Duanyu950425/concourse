@@ -4,7 +4,7 @@ resources:
     source:
       uri: https://github.com/Duanyu950425/concourse.git
       version_depth: 50
-      branch: master
+      branch: main
       private_key: ((private-repo-key))
 
 jobs:
