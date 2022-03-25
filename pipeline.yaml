@@ -2,7 +2,7 @@ resources:
   - name: repo
     type: git
     source:
-      uri: https://github.com/Duanyu950425/Cpp-recitation-notes.git
+      uri: https://github.com/Duanyu950425/concourse.git
       version_depth: 50
       branch: master
       private_key: ((private-repo-key))
@@ -15,4 +15,4 @@ jobs:
         params:
           depth: 1
       - task: copy_source
-        file: copy.yaml
+        file: repo/copy.yaml
